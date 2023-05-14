@@ -16,6 +16,7 @@ services:
       - ipfs:/ipfs
     environment:
       IPFS_PATH: "../ipfs"
+      APE_DISCORD_BOT_TOKEN:
     depends_on:
       - ipfsservice
     restart: "on-failure"
