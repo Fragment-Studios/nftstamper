@@ -16,4 +16,4 @@ RUN go build
 EXPOSE 8080
 
 # Specifies the executable command that runs when the container starts
-CMD [ "./nftstamper", "apebot" ]
+CMD [ "start.sh" ]
