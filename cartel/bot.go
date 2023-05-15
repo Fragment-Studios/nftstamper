@@ -15,7 +15,7 @@ import (
 )
 
 var (
-	ipfsClient      *ipfs.Client
+	ipfsClient      ipfs.Client
 	stamper         *image.Processor
 	metadataFetcher *metadata.HoundMetadataFetcher
 	logger          *log.SugaredLogger
