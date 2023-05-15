@@ -1,0 +1,1 @@
+worker: nftstamper apebot

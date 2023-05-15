@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    environment:
+      IPFS_PATH: "../ipfs"
+      APE_DISCORD_BOT_TOKEN: YOUR_TOKEN
+    restart: "on-failure"
