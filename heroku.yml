@@ -3,4 +3,4 @@ build:
     web: Dockerfile
 
 run:
-  web: ./bin/nftstamper apebot
+  web: ./nftstamper apebot
