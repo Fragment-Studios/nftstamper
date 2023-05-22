@@ -1,3 +1,7 @@
+# Heroku Deployment
+## Configure as a container and set an instance
+```heroku stack:set container --app HEROKU_APP_NAME```
+```heroku ps:scale worker=1 --app HEROKU_APP_NAME```
 
 # NFT Stamper
 [![Twitter Follow](https://img.shields.io/twitter/follow/avis1ash?style=social)](https://twitter.com/avis1ash "Follow me on Twitter!")
