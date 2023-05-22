@@ -11,12 +11,18 @@ type Config struct {
 	MetadataEndpoint     string               `yaml:"metadata_endpoint"`
 	BotToken             string               `yaml:"discord_bot_token"`
 	IPFSEndpoint         string               `yaml:"ipfs_endpoint"`
+	LogLevel             string               `yaml:"log_level"`
 	ImageProcessorConfig ImageProcessorConfig `yaml:"image_processor_mappings"`
 }
 
 type ImageProcessorConfig struct {
-	GMMappings map[string]string `yaml:"gm_mappings"`
-	Filters    FilterCfgs        `yaml:"filters"`
+	GMMappings        map[string]map[string]string `yaml:"gm_mappings"`
+	BaseGMSmoke       string                       `yaml:"base_gm_smoke"`
+	BaseGMSmokePath   string                       `yaml:"base_gm_smoke_path"`
+	AzulGMSmoke       string                       `yaml:"azul_gm_smoke"`
+	BaseGMSmokeBorder string                       `yaml:"base_gm_smoke_border"`
+	AzulGMSmokeBorder string                       `yaml:"azul_gm_smoke_border"`
+	Filters           FilterCfgs                   `yaml:"filters"`
 }
 
 type FilterCfgs struct {
